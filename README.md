@@ -15,7 +15,7 @@
 
 [![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B)](https://isocpp.org/)
 [![STL](https://img.shields.io/badge/STL%20Usage-Zero-brightgreen?style=for-the-badge)](https://en.cppreference.com/)
-[![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-~4700-orange?style=for-the-badge)]()
+[![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-~4081-orange?style=for-the-badge)]()
 [![Data Structures](https://img.shields.io/badge/Data%20Structures-7%20Types-blue?style=for-the-badge)]()
 [![Scenarios](https://img.shields.io/badge/Scenarios-6%20Complete-purple?style=for-the-badge)]()
 
