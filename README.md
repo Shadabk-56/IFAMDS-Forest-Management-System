@@ -289,31 +289,14 @@ Launch the program → select **Menu 10** → **Sub-option 6** to run all six sc
 
 ---
 
-## Development Log
-
-| Date | Hours | Milestone |
-|------|-------|-----------|
-| Thu 1 May | 3h 40m | Arrays A1–A4: static baseline, dynamic sensor, 2D grid, terrain matrix |
-| Fri 2 May | 4h 15m | All 10 linked list classes — SLL, DLL (backward correction fix), CLL (destructor fix) |
-| Sat 3 May | 2h 50m | All 4 queues + Dynamic Scheduler (adjustPriorities, rebalanceQueues) |
-| Sun 4 May | 4h 30m | 12 decision trees + both graph classes (BFS/DFS) + fire-aware cost update |
-| Mon 5 May | 3h 20m | H1, H2, H3 hash tables + complete ECL with checkpoint stack and step log |
-| Tue 6 May | 2h 10m | All 6 scenarios implemented and tested end-to-end |
-| Wed 7 May | 4h 45m | Full STL removal — MyStack, MyQueue, binary min-heap, Edge struct, fixed arrays |
-| Thu 8 May | 3h 05m | Final integration, zero-warning build confirmed, all time-complexity comments added |
-
-**Total: 28 hours 55 minutes**
-
----
-
 ## Authors
 
 <div align="center">
 
 | | Contributor |
 |--|-------------|
-| 👨‍💻 | **[Your Name Here]** |
-| 👨‍💻 | **Taha** |
+| 👨‍💻 | **Shadab Ahad** |
+| 👨‍💻 | **Taha Amjad** |
 
 *CL2001 — Data Structures · Department of Computer Science · Spring 2026*
 
@@ -323,6 +306,6 @@ Launch the program → select **Menu 10** → **Sub-option 6** to run all six sc
 
 <div align="center">
 
-*Built with zero external dependencies — every data structure implemented from first principles.*
+*Built from scratch, zero dependencies — FAST NUCES Islamabad.*
 
 </div>
