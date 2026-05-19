@@ -298,7 +298,7 @@ Launch the program → select **Menu 10** → **Sub-option 6** to run all six sc
 | 👨‍💻 | **Shadab Ahad** |
 | 👨‍💻 | **Taha Amjad** |
 
-*CL2001 — Data Structures · Department of Computer Science · Spring 2026*
+*CL2001 — Data Structures · Department of Artificial Intelligence · Spring 2026*
 
 </div>
 
