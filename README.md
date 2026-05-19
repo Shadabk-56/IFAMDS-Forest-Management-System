@@ -1,285 +1,279 @@
 <div align="center">
-  
-# 🌲 IFAMDS
-  
-### Intelligent Forest Advisory & Multi-Structure Decision System
 
-**CL2001 - Data Structures Project | Spring 2026**
+```
+██╗███████╗ █████╗ ███╗   ███╗██████╗ ███████╗
+██║██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔════╝
+██║█████╗  ███████║██╔████╔██║██║  ██║███████╗
+██║██╔══╝  ██╔══██║██║╚██╔╝██║██║  ██║╚════██║
+██║██║     ██║  ██║██║ ╚═╝ ██║██████╔╝███████║
+╚═╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚══════╝
+```
 
-*A complete console-based forest management simulation with zero STL dependencies.*
+# Intelligent Forest Advisory & Multi-Structure Decision System
+
+**A complete C++ console simulation integrating all major data structures for real-world forest management**
+
+[![Language](https://img.shields.io/badge/Language-C%2B%2B17-blue?style=for-the-badge&logo=cplusplus)](https://isocpp.org/)
+[![STL](https://img.shields.io/badge/STL%20Usage-Zero-brightgreen?style=for-the-badge)](https://github.com)
+[![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-~4700-orange?style=for-the-badge)](https://github.com)
+[![Scenarios](https://img.shields.io/badge/Scenarios-6%20Complete-purple?style=for-the-badge)](https://github.com)
+[![Course](https://img.shields.io/badge/Course-CL2001%20Data%20Structures-red?style=for-the-badge)](https://github.com)
+
+<br/>
+
+*Built from scratch — every stack, queue, tree, graph, and hash table is a custom implementation.*
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 📖 About
 
-1. [Overview](#-overview)
-2. [System Architecture](#-system-architecture)
-3. [Data Structures](#-data-structures)
-4. [Six Scenarios](#-six-scenarios)
-5. [Menu System](#-menu-system)
-6. [Sample Output](#-sample-output)
-7. [Key Algorithms](#-key-algorithms)
-8. [Development Timeline](#-development-timeline)
-9. [Time Complexity](#-time-complexity)
-10. [Building & Running](#-building--running)
-11. [Author](#-author)
+IFAMDS is a fully console-based C++ simulation that models a real-world **forest management and emergency response system**. Sensor data flows through multiple processing layers and decisions emerge from the combined interaction of all major data structures — none working in isolation.
 
----
+The system was architected across **eight departments**, each responsible for a distinct computational concern, and implements **every data structure** covered in a university-level Data Structures course — all written from scratch without using a single STL container.
 
-## 🎯 Overview
-
-IFAMDS is a comprehensive forest fire management simulation built entirely from scratch in **C++17**.
-
-### Key Features:
-- 🔥 Fire Detection & Prediction
-- 🚨 Emergency Response Coordination  
-- 📊 Resource Allocation
-- 🔄 System Recovery & Rollback
-- 📈 Adaptive Performance Monitoring
-
-### ⭐ Key Achievement
-**Zero STL containers used** - Every data structure implemented manually.
+> **Course:** CL2001 — Data Structures &nbsp;|&nbsp; **Spring 2026**  
+> **Authors:** [Your Name] & Taha
 
 ---
 
 ## 🏗️ System Architecture
-┌─────────────────────────────────────────────────────────────┐
-│ IFAMDS CORE SYSTEM │
-├───────────┬───────────┬───────────┬───────────────────────┤
-│ Dept 1 │ Dept 2 │ Dept 3 │ Dept 4 │
-│ Arrays │ Linked │ Stacks │ Queues │
-│ (A1-A4) │ Lists │ (ECL) │ (Q1-Q4 + DSCH) │
-│ │ (L1-L10) │ │ │
-├───────────┼───────────┼───────────┼───────────────────────┤
-│ Dept 5 │ Dept 6 │ Dept 7 │ Dept 8 │
-│ Trees │ Graphs │ Hash │ Adaptive │
-│ (T1-T12) │ (G1-G2) │ Tables │ Monitor (AMON) │
-│ │ │ (H1-H3) │ │
-└───────────┴───────────┴───────────┴───────────────────────┘
 
-text
+The system is divided into 8 departments, each owning a specific layer of the data pipeline:
 
----
-
-## 📊 Data Structures Implemented
-
-| Structure | Instances | Complexity |
-|-----------|-----------|------------|
-| Static Arrays | A1, A3 | O(1), O(n) |
-| Dynamic Arrays | A2, A4 | O(1), O(n) |
-| Singly Linked Lists | L1, L2, L3 | O(1), O(n) |
-| Doubly Linked Lists | L4, L5, L6 | O(1), O(n) |
-| Circular Lists | L7, L8, L9, L10 | O(1), O(n) |
-| FIFO Queues | Q1, Q2, Q4 | O(1) |
-| Priority Queue (Min-Heap) | Q3 | O(log n) |
-| Binary Trees | T1 to T12 | O(1), O(n) |
-| Adjacency List Graph | G1 | O(V+E) |
-| Adjacency Matrix Graph | G2 | O(V²) |
-| Hash Table (Open Addressing) | H1 | O(1) avg |
-| Hash Table (Separate Chaining) | H2 | O(1) avg |
-| Direct Cache | H3 | O(1) |
-| Stack (Checkpoint + Log) | ECL | O(1) |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        IFAMDS SYSTEM                            │
+├──────────────┬──────────────────────────────────────────────────┤
+│  Dept 1      │  Environmental Data Acquisition  →  Arrays A1–A4 │
+│  Dept 2      │  Event Memory & Reconstruction   →  Lists L1–L10 │
+│  Dept 3      │  Execution Control & Reasoning   →  Stack (ECL)  │
+│  Dept 4      │  Task Scheduling & Allocation    →  Queues Q1–Q4 │
+│  Dept 5      │  Hierarchical Decision Intel.    →  Trees T1–T12 │
+│  Dept 6      │  Spatial Connectivity & Routing  →  Graphs G1–G2 │
+│  Dept 7      │  Indexing & Retrieval             →  Hash H1–H3  │
+│  Dept 8      │  System Monitoring & Adaptation  →  AMON         │
+└──────────────┴──────────────────────────────────────────────────┘
+```
 
 ---
 
-## 🎮 Six Simulation Scenarios
+## 🗂️ Data Structures Implemented
 
-| # | Scenario | Description |
-|---|----------|-------------|
-| 1 | 🔥 Cascading Fire | Fire spreads Zone 3 → 4 → 6 with rollback recovery |
-| 2 | 📡 Sensor Failure | Faulty sensors trigger interpolation recovery |
-| 3 | ⚠️ Multi-Factor Anomaly | Wildlife + Fire + Human detection simultaneous |
-| 4 | 🔄 System Overload | Load balancing + cache warming + bottleneck detection |
-| 5 | 🌍 Global Emergency | Ten-zone conflict resolution + synchronized BFS |
-| 6 | 💾 State Recovery | Checkpoint/rollback + adaptive monitoring |
+Every data structure below was built from the ground up — **no STL, no standard containers.**
+
+### 📦 Arrays (A1 – A4)
+| Structure | Type | Purpose |
+|-----------|------|---------|
+| **A1** | Static 1D Array | Baseline environmental reference values (fixed normal conditions) |
+| **A2** | Dynamic 1D Array | Live sensor stream — updated at runtime per zone |
+| **A3** | Static 2D Matrix (4×4) | Spatial temperature grid — supports interpolation & boundary detection |
+| **A4** | Dynamic 2D Matrix (4×4) | Terrain risk scores — updated as conditions evolve |
+
+### 🔗 Linked Lists (L1 – L10)
+| Structure | Type | Purpose |
+|-----------|------|---------|
+| **L1–L3** | Singly Linked | Raw event stream, verified stream, anomaly log |
+| **L4–L6** | Doubly Linked | Forward propagation, backward correction, state sync |
+| **L7–L10** | Circular | Local, system-wide, emergency, and stability monitoring loops |
+
+### 📚 Stacks & Queues
+| Structure | Implementation | Purpose |
+|-----------|---------------|---------|
+| **Checkpoint Stack** | `MyStack<SystemSnapshot>` — array-based | ECL rollback — full A2 snapshot on every unsafe state entry |
+| **Step Log Stack** | `MyStack<ExecutionStep>` — array-based | Complete execution audit trail, newest first |
+| **Q1, Q2, Q4** | `MyQueue<Task>` — circular array FIFO | Routine monitoring, surveillance, multi-factor decisions |
+| **Q3** | Binary min-heap array | Emergency priority queue — lowest priority number processed first |
+
+### 🌳 Trees (T1 – T12)
+Twelve decision trees covering the full decision hierarchy:
+
+```
+T1–T3   →  Structural (Zone hierarchy, sub-zone decomp., terrain)
+T4–T6   →  Resources  (Water, fire control equipment, allocation)
+T7–T9   →  Incidents  (Fire class., wildlife activity, human activity)
+T10–T12 →  Decisions  (Local zone, regional escalation, global alert)
+```
+
+Each tree evaluates a weighted risk score: `Score = w₁·fire + w₂·smoke + w₃·temp`
+
+### 🕸️ Graphs (G1 – G2)
+| Graph | Representation | Complexity |
+|-------|---------------|------------|
+| **G1** | Adjacency List (`Edge[][]`) | BFS/DFS: O(V+E) &nbsp;\|&nbsp; Space: O(V+E) |
+| **G2** | Adjacency Matrix (`double[][]`) | BFS: O(V²) &nbsp;\|&nbsp; Edge lookup: O(1) |
+
+Both support **BFS** (fire spread simulation) and G1 additionally supports **DFS** (path tracing). Fire-aware cost update: `newCost = distance × (1 + fireLevel)`
+
+### #️⃣ Hash Tables (H1 – H3)
+| Table | Strategy | Purpose |
+|-------|----------|---------|
+| **H1** | Open addressing + linear probing | Primary zone data index — O(1) average |
+| **H2** | Separate chaining | Collision resolution — linked chain per bucket |
+| **H3** | Direct-mapped cache | Fast retrieval — O(1) put/get for hot zones |
+
+Hash function: `index = ZoneID mod 11` (prime table size for better distribution)
+
+---
+
+## 🎬 Scenarios
+
+Six complete forest-based simulation scenarios are included:
+
+| # | Scenario | Key Structures Used |
+|---|----------|-------------------|
+| **1** | **Cascading Fire & Resource Conflict Resolution** | A2, ECL, L1/L2, DSCH, Q3, T7, T10, T11, G1 BFS |
+| **2** | **Sensor Failure & System Reconstruction** | ECL rollback (×2), L2 filter, A3 interpolation, L5 BWD, H1 |
+| **3** | **Multi-Factor Anomaly Escalation** | T7/T8/T9, multi-factor score, L3, Q3, G1 BFS, T12 |
+| **4** | **System Overload & Load Redistribution** | DSCH rebalance, H3 cache, ECL, AMON threshold tuning |
+| **5** | **Global Multi-Zone Emergency Synchronization** | ECL global scan, L4/L5/L6, T11/T12, G2 BFS, Q3 burst |
+| **6** | **Execution Control & State Recovery** | Dept 3 (ECL), Dept 4 (DSCH), Dept 8 (AMON) in isolation |
+
+---
+
+## ⚡ Complexity Reference
+
+| Operation | Time | Location |
+|-----------|------|----------|
+| Array access / update | O(1) | A1, A2, A3, A4 |
+| Spatial interpolation | O(1) | A3 |
+| SLL insert-front | O(1) | L1–L3 |
+| SLL noise filter | O(n) | L2 |
+| DLL insert-back | O(1) | L4–L6 |
+| DLL correction | O(n) | L4 FWD, L5 BWD |
+| CLL insert | O(1) | L7–L10 |
+| FIFO enqueue/dequeue | O(1) | Q1, Q2, Q4 |
+| Priority Queue enqueue | O(log n) | Q3 |
+| Priority Queue dequeue | O(log n) | Q3 |
+| Tree traversal (pre-order) | O(n) | T1–T12 |
+| Decision score evaluation | O(1) | All trees |
+| G1 BFS / DFS | O(V+E) | G1 |
+| G2 BFS | O(V²) | G2 |
+| Hash insert / search (avg) | O(1) | H1, H2, H3 |
+| ECL checkpoint capture | O(n) | ECL |
+| ECL rollback (restore) | O(n) | ECL |
+| DSCH priority adjustment | O(n log n) | DSCH |
+| AMON bottleneck detection | O(6) = O(1) | AMON |
 
 ---
 
 ## 🖥️ Menu System
-╔════════════════════════════════════════════════════════╗
-║ IFAMDS - MAIN MENU ║
-╠════════════════════════════════════════════════════════╣
-║ 1. Input Environmental Data ║
-║ 2. View Forest Grid Status ║
-║ 3. Event Memory System ║
-║ 4. Fire Detection and Control ║
-║ 5. Task Scheduling System ║
-║ 6. Decision System ║
-║ 7. Spatial Routing System ║
-║ 8. Hash-Based Fast Access System ║
-║ 9. System Monitoring ║
-║ 10. Scenario Simulation ║
-║ 0. Exit System ║
-╚════════════════════════════════════════════════════════╝
 
-text
+The system provides a **two-level hierarchical menu** with 10 functional groups and 46 total sub-operations:
 
----
-
-## 📈 Sample Output
-
-### BFS Fire Spread Prediction
-[G1-BFS] Fire spread from Zone3:
-Level 0: Zone3
-Level 1: Zone1 Zone6
-Level 2: Zone0 Zone4 Zone8
-Level 3: Zone2 Zone5 Zone7 Zone9
-
-text
-
-### Emergency Queue Processing
-[Q3-EmergencyResponse] EMERGENCY dequeued: SYNC-Z0 Zone=0 Priority=1
-[Q3-EmergencyResponse] EMERGENCY dequeued: SYNC-Z2 Zone=2 Priority=1
-Total synchronized tasks dispatched: 6
-
-text
-
-### ECL Rollback Recovery
-[ECL] Rolling back to: "SCENARIO2_PRE_FAIL" (tick=18)
-[ECL] State restored. Execution resumed.
-[ECL] Alternative Path: Zone2 replacing faulty=55.0 with interpolated=26.5
-
-text
+```
+Main Menu
+├── 1.  Input Environmental Data
+│       1.1 Add Sensor Reading   1.2 Store in Dynamic Array
+│       1.3 Compare with Baseline  1.4 Validate & Filter Noise
+├── 2.  View Forest Grid Status
+├── 3.  Event Memory System
+├── 4.  Fire Detection and Control
+├── 5.  Task Scheduling System
+├── 6.  Decision System
+├── 7.  Spatial Routing System
+├── 8.  Hash-Based Fast Access System
+├── 9.  System Monitoring
+└── 10. Scenario Simulation
+         10.6 Run Full System Simulation (all 6 scenarios)
+```
 
 ---
 
-## 🧠 Key Algorithms
+## 🚀 Build & Run
 
-| Algorithm | Location | Time Complexity |
-|-----------|----------|-----------------|
-| Linear Probing | H1 (Hash Table) | O(1) average |
-| Separate Chaining | H2 (Hash Table) | O(1) average |
-| Binary Min-Heap | Q3 (Priority Queue) | O(log n) |
-| Pre-order Traversal | T1-T12 (Trees) | O(n) |
-| BFS (Adjacency List) | G1 | O(V+E) |
-| BFS (Adjacency Matrix) | G2 | O(V²) |
-| DFS (Recursive) | G1 | O(V+E) |
-| Spatial Interpolation | A3 | O(1) |
-| Noise Filter | L2 (Linked List) | O(n) |
-| Heapify Up/Down | EmergencyQueue | O(log n) |
+### Requirements
+- A C++17-compatible compiler (`g++`, `clang++`, or MSVC)
+- No external dependencies — zero libraries required beyond the standard headers
 
----
+### Compile
 
-## ⏱️ Development Timeline
-
-| Date | Hours | Work Done |
-|------|-------|-----------|
-| May 1 | 3h 40m | Arrays A1, A2, A3, A4 with interpolation |
-| May 2 | 4h 15m | All Linked Lists (Singly, Doubly, Circular) |
-| May 3 | 2h 50m | Queues Q1-Q4 + Dynamic Scheduler (DSCH) |
-| May 4 | 4h 30m | Trees T1-T12 + Graphs G1-G2 (BFS/DFS) |
-| May 5 | 3h 20m | Hash Tables H1, H2, H3 + ECL |
-| May 6 | 2h 10m | Six Complete Simulation Scenarios |
-| May 7 | 4h 45m | STL Replacement (MyStack, MyQueue, MinHeap) |
-| May 8 | 3h 05m | Integration, Cleanup, Documentation |
-| **Total** | **28h 55m** | |
-
----
-
-## ⏰ Time Complexity Reference
-
-| Operation | Data Structure | Complexity |
-|-----------|----------------|------------|
-| Access by index | Array | O(1) |
-| Update single zone | Dynamic Array | O(1) |
-| Insert front | Singly Linked List | O(1) |
-| Insert back | Singly Linked List | O(n) |
-| Search | Singly Linked List | O(n) |
-| Insert back | Doubly Linked List | O(1) |
-| Forward/Backward correction | Doubly Linked List | O(n) |
-| Insert | Circular Linked List | O(1) |
-| One monitoring cycle | Circular Linked List | O(n) |
-| Enqueue/Dequeue | FIFO Queue | O(1) |
-| Enqueue/Dequeue | Priority Queue | O(log n) |
-| Add child | Tree | O(1) |
-| Pre-order traversal | Tree | O(n) |
-| BFS | Adjacency List Graph | O(V+E) |
-| BFS | Adjacency Matrix Graph | O(V²) |
-| DFS | Adjacency List Graph | O(V+E) |
-| Insert/Search (avg) | Hash Table | O(1) |
-| Get/Put | Direct Cache | O(1) |
-| Push/Pop | Stack | O(1) |
-| Capture checkpoint | ECL | O(n) |
-| Rollback restore | ECL | O(n) |
-
----
-
-## 🛠️ Building & Running
-
-### Prerequisites
-- C++17 compatible compiler (g++ 7+, clang 5+, MSVC 2017+)
-- No external dependencies
-- No STL required
-
-### Compilation
-
-**Linux / Mac:**
 ```bash
-g++ -std=c++17 -Wall -Wextra -O2 IFAMDS_noSTL.cpp -o ifamds
-./ifamds
-Windows:
+g++ -std=c++17 -Wall -Wextra -O2 -o IFAMDS IFAMDS_noSTL.cpp
+```
 
-bash
-g++ -std=c++17 -Wall -Wextra -O2 IFAMDS_noSTL.cpp -o ifamds.exe
-ifamds.exe
-Quick Test
-After running the program:
+### Run
 
-text
-Enter choice: 10
-Then select: 6 (Run Full System Simulation)
-📁 Project Structure
-text
-IFAMDS-Forest-Management-System/
-│
-├── IFAMDS_noSTL.cpp      # Main source code (4700+ lines)
-├── README.md             # This file
-├── LICENSE               # MIT License
-├── .gitignore            # Git ignore rules
-│
-└── docs/
-    └── IFAMDS_Project_Report.pdf
-Source Code Sections
-text
-Section 1: Arrays (A1-A4) - Environmental Data
-Section 2: Linked Lists (L1-L10) - Event Memory
-Section 3: Queues (Q1-Q4) - Scheduling Engine
-Section 4: Trees (T1-T12) - Decision Intelligence
-Section 5: Graphs (G1-G2) - Routing Layer
-Section 6: Hash Tables (H1-H3) - Indexing Layer
-Section 7: Execution Control (ECL) - Stack Control
-Section 8: Dynamic Scheduler (DSCH) - Queue Management
-Section 9: Adaptive Monitor (AMON) - Performance
-Section 10: Scenarios 1-6 - Simulations
-Section 11: Main Menu - Interactive Interface
-👨‍💻 Author
-Shadab Khan
-*CL2001 - Data Structures*
-Department of Computer Science
-Spring 2026
+```bash
+./IFAMDS
+```
 
-GitHub: @Shadabk-56
+> **Windows:**
+> ```cmd
+> g++ -std=c++17 -Wall -Wextra -O2 -o IFAMDS.exe IFAMDS_noSTL.cpp
+> IFAMDS.exe
+> ```
 
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Quick Start — Run All 6 Scenarios
 
-text
-MIT License
+Once the program starts:
+1. The system initializes all 8 departments automatically
+2. From the main menu, select **`10`** → Scenario Simulation
+3. Select **`6`** → Run Full System Simulation
 
-Copyright (c) 2026 Shadab Khan
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions...
+## 📁 Repository Structure
 
-Full license text available in LICENSE file.
+```
+IFAMDS/
+├── IFAMDS_noSTL.cpp          # Complete source code (~4,700 lines)
+├── IFAMDS_Project_Report.docx # Full project report with dev log
+└── README.md                  # This file
+```
+
+---
+
+## 🔑 Key Design Decisions
+
+**Why no STL?**  
+Every container — `MyStack<T>`, `MyQueue<T>`, the binary min-heap, the adjacency list — was built from scratch using fixed-size arrays. This eliminates dynamic memory overhead, makes the code fully portable, and demonstrates a deep understanding of each data structure's internals.
+
+**Why circular arrays for queues?**  
+The circular array queue (`MyQueue`) offers O(1) enqueue and dequeue without shifting elements, matches the performance of `std::queue<deque>`, and avoids heap fragmentation from linked-node queues.
+
+**Why a stack for checkpoints?**  
+LIFO matches the rollback pattern exactly — the system always wants to restore the *most recently* captured safe state. The push/pop operations are O(1), and the fixed-size array-based stack avoids any heap allocation during a crisis moment when performance matters most.
+
+---
+
+## 🛠️ Development Timeline
+
+| Date | Hours | Milestone |
+|------|-------|-----------|
+| 1 May | 3h 40m | Arrays A1–A4 with interpolation & boundary detection |
+| 2 May | 4h 15m | All 10 linked list classes (SLL, DLL, CLL) |
+| 3 May | 2h 50m | Queues Q1–Q4 + Dynamic Scheduler (DSCH) |
+| 4 May | 4h 30m | 12 decision trees + both graph classes (BFS/DFS) |
+| 5 May | 3h 20m | Hash tables H1–H3 + full ECL (checkpoint + rollback) |
+| 6 May | 2h 10m | All 6 scenarios integrated and tested |
+| 7 May | 4h 45m | **Full STL removal** — replaced all containers with custom implementations |
+| 8 May | 3h 05m | Final integration, edge cases, time complexity comments, report |
+
+**Total: 28 hours 55 minutes across 8 days**
+
+---
+
+## 👥 Authors
+
+<table>
+  <tr>
+    <td align="center">
+      <b>[Your Name]</b><br/>
+      <sub>Co-developer</sub>
+    </td>
+    <td align="center">
+      <b>Taha</b><br/>
+      <sub>Co-developer</sub>
+    </td>
+  </tr>
+</table>
+
+CL2001 — Data Structures &nbsp;|&nbsp; Spring 2026 &nbsp;|&nbsp; Department of Computer Science
+
+---
+
 <div align="center">
-⭐ Star this repository if you found it useful! ⭐
-Built with ❤️ using pure C++17 | 4700+ lines | 28+ hours | 0 STL containers
-
-</div> ```
+  <sub>Built with 💚 and zero STL containers.</sub>
+</div>
