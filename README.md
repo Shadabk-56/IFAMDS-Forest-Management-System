@@ -97,3 +97,4 @@ g++ -std=c++17 -Wall -Wextra -O2 IFAMDS_noSTL.cpp -o ifamds
 # On Windows
 ifamds.exe
 
+---
