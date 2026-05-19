@@ -238,22 +238,6 @@ LIFO matches the rollback pattern exactly — the system always wants to restore
 
 ---
 
-## 🛠️ Development Timeline
-
-| Date | Hours | Milestone |
-|------|-------|-----------|
-| 25 April | 3h 40m | Arrays A1–A4 with interpolation & boundary detection |
-| 27 April | 4h 15m | All 10 linked list classes (SLL, DLL, CLL) |
-| 28 April | 2h 50m | Queues Q1–Q4 + Dynamic Scheduler (DSCH) |
-| 30 April | 4h 30m | 12 decision trees + both graph classes (BFS/DFS) |
-| 1 May    | 3h 20m | Hash tables H1–H3 + full ECL (checkpoint + rollback) |
-| 2 May    | 2h 10m | All 6 scenarios integrated and tested |
-| 3 May    | 4h 45m | **Full STL removal** — replaced all containers with custom implementations |
-| 4 May    | 3h 05m | Final integration, edge cases, time complexity comments, report |
-
-**Total: 28 hours 55 minutes across 8 days**
-
----
 
 ## 👥 Authors
 
