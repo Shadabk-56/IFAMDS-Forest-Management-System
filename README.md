@@ -34,7 +34,7 @@ IFAMDS is a fully console-based C++ simulation that models a real-world **forest
 The system was architected across **eight departments**, each responsible for a distinct computational concern, and implements **every data structure** covered in a university-level Data Structures course — all written from scratch without using a single STL container.
 
 > **Course:** CL2001 — Data Structures &nbsp;|&nbsp; **Spring 2026**  
-> **Authors:** [Your Name] & Taha
+> **Authors:** Shadab Ahad & Taha Amjad
 
 ---
 
@@ -242,14 +242,14 @@ LIFO matches the rollback pattern exactly — the system always wants to restore
 
 | Date | Hours | Milestone |
 |------|-------|-----------|
-| 1 May | 3h 40m | Arrays A1–A4 with interpolation & boundary detection |
-| 2 May | 4h 15m | All 10 linked list classes (SLL, DLL, CLL) |
-| 3 May | 2h 50m | Queues Q1–Q4 + Dynamic Scheduler (DSCH) |
-| 4 May | 4h 30m | 12 decision trees + both graph classes (BFS/DFS) |
-| 5 May | 3h 20m | Hash tables H1–H3 + full ECL (checkpoint + rollback) |
-| 6 May | 2h 10m | All 6 scenarios integrated and tested |
-| 7 May | 4h 45m | **Full STL removal** — replaced all containers with custom implementations |
-| 8 May | 3h 05m | Final integration, edge cases, time complexity comments, report |
+| 25 April | 3h 40m | Arrays A1–A4 with interpolation & boundary detection |
+| 27 April | 4h 15m | All 10 linked list classes (SLL, DLL, CLL) |
+| 28 April | 2h 50m | Queues Q1–Q4 + Dynamic Scheduler (DSCH) |
+| 30 April | 4h 30m | 12 decision trees + both graph classes (BFS/DFS) |
+| 1 May    | 3h 20m | Hash tables H1–H3 + full ECL (checkpoint + rollback) |
+| 2 May    | 2h 10m | All 6 scenarios integrated and tested |
+| 3 May    | 4h 45m | **Full STL removal** — replaced all containers with custom implementations |
+| 4 May    | 3h 05m | Final integration, edge cases, time complexity comments, report |
 
 **Total: 28 hours 55 minutes across 8 days**
 
@@ -260,17 +260,17 @@ LIFO matches the rollback pattern exactly — the system always wants to restore
 <table>
   <tr>
     <td align="center">
-      <b>[Your Name]</b><br/>
+      <b>Shadab Ahad</b><br/>
       <sub>Co-developer</sub>
     </td>
     <td align="center">
-      <b>Taha</b><br/>
+      <b>Taha Amjad</b><br/>
       <sub>Co-developer</sub>
     </td>
   </tr>
 </table>
 
-CL2001 — Data Structures &nbsp;|&nbsp; Spring 2026 &nbsp;|&nbsp; Department of Computer Science
+CL2001 — Data Structures &nbsp;|&nbsp; Spring 2026 &nbsp;|&nbsp; Department of Artificial Intelligence
 
 ---
 
